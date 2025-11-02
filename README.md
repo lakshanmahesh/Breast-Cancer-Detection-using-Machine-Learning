@@ -19,7 +19,10 @@ The dataset includes medical cell features such as:
    - Standardized features using `StandardScaler` from `sklearn.preprocessing`.
 
 2. **Handling Imbalanced Data**  
-   - Used `SMOTEENN` (from `imblearn.combine`) to balance the dataset.
+   - Used `SMOTEENN` (from `imblearn.combine`) to balance the dataset
+     
+         from imblearn.combine import SMOTEENN
+     
    - Visualized data distribution before and after balancing.
 
 ## 🤖 Model Training
@@ -27,7 +30,7 @@ Applied multiple machine learning models and evaluated them using **cross-valida
 
 | Model                      | Accuracy         |
 |:---------------------------|:----------------:|
-| K-Nearest Neighbors        | 0.9988           |
+| K-Nearest Neighbors        | 0.9988           | ✅ (Best)
 | Random Forest              | 0.9964           |
 | Naive Bayes                | 0.9807           |
 | Logistic Regression        | 0.9976           |
@@ -35,7 +38,7 @@ Applied multiple machine learning models and evaluated them using **cross-valida
 | Gradient Boosting          | 0.9940           |
 
 ## 🔧 Hyperparameter Tuning
-- Used `GridSearchCV` for hyperparameter optimization.
+- Used GridSearchCV to find the best parameters for KNN.
 - **Best Model:** Achieved **100% accuracy (1.0)** after tuning.
 
 ## 🧩 Evaluation
