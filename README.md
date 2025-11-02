@@ -32,7 +32,7 @@ Applied multiple machine learning models and evaluated them using **cross-valida
 
 | Model                      | Accuracy         |
 |:---------------------------|:----------------:|
-| K-Nearest Neighbors        | 0.9988           | ✅ (Best)
+| K-Nearest Neighbors        | 0.9988   ✅      | 
 | Random Forest              | 0.9964           |
 | Naive Bayes                | 0.9807           |
 | Logistic Regression        | 0.9976           |
